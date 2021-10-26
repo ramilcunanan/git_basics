@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<style>
+	body{
+		background-color: black;
+	}
+	.one, .two, .three, .four, .fifth,.six, .seven, .eight{
+		border: 5px solid gray;
+		background-color: orange;
+	
+		width: 250px;
+		height: 250px;
+		margin: 20px;
+		border-radius: 14px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	h1{
+		color: orange;
+
+	}
+	img{
+		height:90%;
+		width: 90%;
+		padding: 5%;
+		border-radius:5px;
+		float: inherit;
+		}
+	.one img{
+		border-radius: 14px;
+	}
+	img:hover{
+		opacity: .5;
+		transform: scale(1.12);
+
+	}
+	button{
+		background-color: orange;
+		border:5px solid gray;
+		color: white;
+		border-radius: 14px;
+		height: 40px;
+		width: 100px;
+		font-size: 25px;
+
+	}
+	button:hover{
+		opacity: .5;
+	}
+	.image{
+		border:5px;
+		border-radius: 14px;
+	}
+	
+	
+</style>
+<body>
+	
+	<a href="new.html"><button>BACK</button></a>
+	<h1 align="center">WHICH GAME YOU LIKE MOST?</h1>
+		<div>
+			<div class="one">
+				<div class="image">
+					<img  src="img/ml.png">
+					<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+				</div>
+			</div>
+			<div class="two">
+					<img src="img/cod.png">
+					a
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+			</div>
+			<div class="three">
+				<img src="img/dota.jpg">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+
+			</div>
+			<div class="four">
+				<img src="img/re4.jpg">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+			</div>
+			<div class="fifth">
+				<img src="img/cv.png">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+
+			</div>
+			<div class="six">
+				<img src="img/soc.jfif">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+			</div>
+			<div class="seven">
+				<img src="img/crash.jpg	">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+			</div>
+			<div class="eight">
+				<img src="img/rf2.jpg	">
+				<audio id="beep" preload="auto">
+					<source src="sounds/smb_fireball.wav" type="">
+				</audio>
+			</div>
+
+		</div>
+<audio autoplay="true" 
+src="sounds/mlbb.mp3" controls> 
+</audio>
+
+<script type="text/javascript">
+			var name ="hi welcome this my fist practice website!!"
+			alert(name) ;
+</script>
+<script >
+	var beepOne= $("#beep")[0];
+	$(".one,.two, .three, .four, .fifth,.six, .seven, .eight")
+	.mouseenter(function(){
+
+		beepOne.play();
+	});
+	
+</script>
+</body>
+</html>
